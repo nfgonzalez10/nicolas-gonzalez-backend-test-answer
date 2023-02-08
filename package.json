@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer/issues"
   },
-  "homepage": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer#readme"
+  "homepage": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer#readme",
+  "devDependencies": {
+    "jest": "^29.4.2"
+  }
 }
