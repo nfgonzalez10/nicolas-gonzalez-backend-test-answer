@@ -1,0 +1,25 @@
+{
+  "name": "nicolas-gonzalez-test-backend-answer",
+  "version": "1.0.0",
+  "description": "meridian group test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer.git"
+  },
+  "keywords": [
+    "[\"node.js\"",
+    "\"meridian\"",
+    "\"meridian",
+    "group\"]"
+  ],
+  "author": "Nicolas Gonzalez",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer/issues"
+  },
+  "homepage": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer#readme"
+}
