@@ -2,9 +2,12 @@
   "name": "nicolas-gonzalez-test-backend-answer",
   "version": "1.0.0",
   "description": "meridian group test",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "DEBUG=express:* npx pm2 start ecosystem.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "which link-module-alias && link-module-alias clean || echo",
+    "postinstall": "link-module-alias"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,15 @@
   "bugs": {
     "url": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer/issues"
   },
-  "homepage": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer#readme"
+  "homepage": "https://github.com/nfgonzalez10/nicolas-gonzalez-backend-test-answer#readme",
+  "devDependencies": {
+    "jest": "^29.4.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.0.1",
+    "pm2": "^5.2.2"
+  }
 }
