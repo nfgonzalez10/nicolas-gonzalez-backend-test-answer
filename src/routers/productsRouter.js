@@ -9,4 +9,10 @@ router.post(
   productsController.insertTestProducts
 );
 
+router.get(
+  "",
+  authVerification.middleVerification,
+  productsController.getAllProducts
+);
+
 module.exports = router;

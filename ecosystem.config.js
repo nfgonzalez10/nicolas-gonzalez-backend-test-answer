@@ -4,7 +4,7 @@ module.exports = {
       name: "http-service",
       script: "./src/app.js",
       watch: true,
-      node_args: "--inspect-brk",
+      node_args: "--inspect",
     },
   ],
 };

@@ -7,6 +7,7 @@ class MongoDBConnection {
   static #database;
   constructor() {
     this.#client = new MongoClient(URI);
+    this.open();
   }
   open() {
     try {
@@ -23,7 +24,6 @@ class MongoDBConnection {
   currentDatabase() {
     return MongoDBConnection.#database;
   }
-
   close() {
     return this.#client.close();
   }
