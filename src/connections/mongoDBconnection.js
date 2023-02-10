@@ -1,7 +1,6 @@
 const { MongoClient } = require("mongodb");
-const URI =
-  "mongodb+srv://nfgonzalez10:PWDu8mrA27NuFkiW@cluster0.yjdif5h.mongodb.net/?retryWrites=true&w=majority" ??
-  "mongodb://localhost:27017";
+const URI = process.env.ME_CONFIG_MONGODB_URL;
+
 class MongoDBConnection {
   #client;
   static #database;
