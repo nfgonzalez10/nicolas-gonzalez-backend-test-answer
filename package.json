@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "DEBUG=express:* npx pm2 start ecosystem.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "which link-module-alias && link-module-alias clean || echo",
-    "postinstall": "link-module-alias"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
