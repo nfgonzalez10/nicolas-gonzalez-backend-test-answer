@@ -9,6 +9,8 @@ exports.middleVerification = (req, res, next) => {
       const token = bearerHeader?.split(" ")?.pop();
       identifyService.verifyToken(token);
       next();
+    } else {
+      throw new Error(consts.AUTH_FAILLED);
     }
   } catch (error) {
     console.log("🚀 ~ file: authVerification.js:17 ~ error", error);

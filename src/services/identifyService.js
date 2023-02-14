@@ -16,7 +16,7 @@ exports.verifyToken = (token) => {
   if (!token) throw new Error("Token is required to verify");
 
   try {
-    jwt.verify(token, "secretkey");
+    return jwt.verify(token, "secretkey");
   } catch (error) {
     throw new Error("Invalid token");
   }

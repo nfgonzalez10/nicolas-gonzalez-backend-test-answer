@@ -19,4 +19,12 @@ exports.ERRORS = {
     statusCode: 406,
     message: constants.PAYMENT_NOT_PROCESSED,
   },
+  [constants.AUTH_FAILLED]: {
+    statusCode: 403,
+    message: constants.AUTH_FAILLED,
+  },
+  [constants.INVALID_COUPON]: {
+    statusCode: 403,
+    message: constants.INVALID_COUPON,
+  },
 };
